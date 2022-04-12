@@ -31,7 +31,7 @@ echo -e "${RED}                                   [!] This Tool Must Run As ROOT
 echo ""
 echo -e ${CYAN}              "Select Best Option : "
 echo ""
-echo -e "${WHITE}              [1] Kali Linux / Parrot-Os "
+echo -e "${WHITE}              [1] Kali Linux / Termux "
 echo -e "${WHITE}              [0] Exit "
 echo -n -e "Z4nzu >> "
 read choice
@@ -42,8 +42,8 @@ if [ $choice == 1 ]; then
 	wget -q --tries=10 --timeout=20 --spider https://google.com
 	if [[ $? -eq 0 ]]; then
 	    echo -e ${BLUE}"[✔] Loading ... "
-	    sudo apt-get update && apt-get upgrade 
-	    sudo apt-get install python-pip
+	    apt-get update && apt-get upgrade 
+	    apt-get install python-pip
 	    echo "[✔] Checking directories..."
 	    if [ -d "$INSTALL_DIR" ]; then
 	        echo "[!] A Directory hackingtool Was Found.. Do You Want To Replace It ? [y/n]:" ;
@@ -59,17 +59,17 @@ if [ $choice == 1 ]; then
 		git clone https://github.com/Z4nzu/hackingtool.git "$INSTALL_DIR";
 		echo "#!/bin/bash
 		python3 $INSTALL_DIR/hackingtool.py" '${1+"$@"}' > hackingtool;
-		sudo chmod +x hackingtool;
-		sudo cp hackingtool /usr/bin/;
+		chmod +x hackingtool;
+		cp hackingtool /usr/bin/;
 		rm hackingtool;
 		echo ""; 
 		echo "[✔] Trying to installing Requirements ..."
-		sudo pip3 install lolcat
-		sudo apt-get install -y figlet
-		sudo pip3 install boxes
-		sudo apt-get install boxes
-		sudo pip3 install flask
-		sudo pip3 install requests
+		pip3 install lolcat
+		apt-get install -y figlet
+		pip3 install boxes
+		apt-get install boxes
+		pip3 install flask
+		pip3 install requests
 	else 
 		echo -e $RED "Please Check Your Internet Connection ..!!"
 	fi
@@ -81,7 +81,7 @@ if [ $choice == 1 ]; then
         echo "";
         echo -e $ORANGE "		[+]+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[+]"
         echo 		"		[+]						      		[+]"
-        echo -e $ORANGE  "		[+]     ✔✔✔ Now Just Type In Terminal (hackingtool) ✔✔✔ 	[+]"
+        echo -e $ORANGE  "		[+]     ✔✔✔ Now Just Type In Terminal (J-hackingtool) ✔✔✔ 	[+]"
         echo 		"		[+]						      		[+]"
         echo -e $ORANGE "		[+]+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[+]"
     else
