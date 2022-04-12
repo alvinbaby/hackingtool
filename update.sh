@@ -1,22 +1,21 @@
-echo "███████╗██╗  ██╗███╗   ██╗███████╗██╗   ██╗    ";
-echo "╚══███╔╝██║  ██║████╗  ██║╚══███╔╝██║   ██║    ";
-echo "  ███╔╝ ███████║██╔██╗ ██║  ███╔╝ ██║   ██║    ";
-echo " ███╔╝  ╚════██║██║╚██╗██║ ███╔╝  ██║   ██║    ";
-echo "███████╗     ██║██║ ╚████║███████╗╚██████╔╝    ";
-echo "╚══════╝     ╚═╝╚═╝  ╚═══╝╚══════╝ ╚═════╝     ";
-echo "                                               ";
+echo "
+echo "
+echo "
+echo "
+echo "
+
 
 clear
 
-sudo chmod +x /etc/
+chmod +x /etc/
 
 clear
 
-sudo chmod +x /usr/share/doc
+chmod +x /usr/share/doc
 
 clear
 
-sudo rm -rf /usr/share/doc/hackingtool/
+rm -rf /usr/share/doc/hackingtool/
 
 clear
 
@@ -24,7 +23,7 @@ cd /etc/
 
 clear
 
-sudo rm -rf /etc/hackingtool
+rm -rf /etc/hackingtool
 
 clear
 
@@ -36,7 +35,7 @@ cd hackingtool
 
 clear
 
-git clone https://github.com/Z4nzu/hackingtool.git
+git clone https://github.com/alvinbaby/hackingtool.git
 
 clear
 
@@ -44,7 +43,7 @@ cd hackingtool
 
 clear
 
-sudo chmod +x install.sh
+chmod +x install.sh
 
 clear
 
